@@ -1,0 +1,379 @@
+*
+{
+    padding:0px;
+    margin: 0px;
+}
+
+body
+{
+    background-image: url("../img/hojas.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+input
+{
+    border: 1px solid #ccc;
+    height: 25px;
+    border-radius: 3px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+select
+{
+    border: 1px solid rgb(201, 199, 199);
+    height: 25px;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-bottom: 13px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+input[type = "submit"]
+{
+    width: 60px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+#temas
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    width:50px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.301);
+    position: fixed;
+    top: 40%;
+}
+
+#temas #verde
+{
+    width: 25px;
+    height: 25px;
+    /*margin: 5px auto;*/
+    background-color:#235E3D;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#temas #rojo
+{
+    width: 25px;
+    height: 25px;
+    /*margin: 5px auto;*/
+    background-color:#CA3413;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#temas #celeste
+{
+    width: 25px;
+    height: 25px;
+    /*margin: 5px auto;*/
+    background-color:#1F87C4;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#reloj
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+    background-color: #1D589D;
+    margin: 0px auto;
+    margin-top: 65px;
+    color: white;
+    font-size:50px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+#contenido
+{
+    width: 800px;
+    padding: 20px;
+    margin: 0px auto;
+    margin-top: 30px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#contenido header #logo
+{
+    width: 380px;
+    height: 80px;
+    background-color: #235E3D;
+}
+
+#contenido header #logo h1
+{
+    font-family:verdana, Arial;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 75px;
+    text-transform:uppercase;
+}
+
+#contenido header nav
+{
+    margin-top: 20px;
+    background-color: #333333;
+    height: 40px;
+}
+
+#contenido header nav ul
+{
+    display: flex;
+    width: 100%;
+    line-height: 40px;
+    list-style: none;
+}
+
+#contenido header nav ul li
+{
+    width: 25%;
+    transition: all 300ms linear;
+}
+
+#contenido header nav ul li:hover
+{
+    background-color:#318154;
+}
+
+#contenido header nav ul li a
+{
+    display:block;
+    width: 100%;
+    text-align: center;
+    font-family: Helvetica, Arial;
+    color: white;
+    font-size: 17.5px;
+}
+
+#galeria
+{
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+#galeria #slider
+{
+    width: 100%;
+    height: 250px;
+}
+
+#galeria #slider img
+{
+    width: 100%;
+}
+
+#principal
+{
+    display: flex;
+    width: 100%;
+}
+
+#principal #articulos
+{
+    width: 65%;
+}
+
+#principal #articulos #formulario-contacto
+{
+    display: flex;
+    flex-flow: column wrap;
+    width: 35%;
+    margin-top: 4px;
+}
+
+#principal #articulos #formulario-contacto label
+{
+    font-size: 19px;
+    font-weight: 200;
+    margin-top: 5px;
+}
+
+#principal #articulos #formulario-contacto span
+{
+    background-color: #CA3413;
+    color: white;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+#principal #articulos h2
+{
+    margin-top: 50px;
+    font-family: Helvetica, Arial;
+    font-size:33px;
+    color:#333333;
+}
+
+#principal #articulos #acordeon
+{
+    margin-top: 30px;
+    width: 80%;
+}
+
+#principal #articulos #acordeon ul
+{
+    list-style: none;
+}
+
+#principal #articulos #acordeon ul li a
+{
+    color: black;
+}
+
+#principal #articulos .articulo
+{
+    margin-top: 30px;
+}
+
+#principal #articulos .articulo h2
+{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Helvetica, Arial;
+}
+
+#principal #articulos .articulo span
+{
+    color: grey;
+    display: block;
+    margin-top: 5px;
+}
+
+#principal #articulos .articulo p
+{
+    margin-top:25px;
+    width: 85%;
+    font-size:18px;
+    text-align: justify;
+}
+
+#principal #articulos .articulo a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    width: 75px;
+    margin-top:15px;
+    background-color: #235E3D;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#principal #barra
+{
+    width: 35%;
+}
+
+#principal #barra h3
+{
+    text-align: center;
+    font-weight: 200;
+    margin-top: 55px;
+}
+
+#principal #barra #quien-soy
+{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#principal #barra #quien-soy img
+{
+    width: 100%;
+}
+
+#principal #barra #quien-soy p
+{
+    text-align: justify;
+}
+
+#principal #barra #identificate h3
+{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#principal #barra #identificate form
+{
+    display: flex;
+    flex-flow: column wrap;
+    width: 93%;
+    margin-top: 4px;
+}
+
+#principal #barra #identificate form label
+{
+    font-size: 19px;
+    font-weight: 200;
+    margin-top: 5px;
+}
+
+#principal #barra #identificate form input[type = "submit"]
+{
+    width: 22%;
+    padding: 3px;
+    margin-top: 20px;
+}
+
+#footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    margin: 50px auto 20px auto;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.507);
+}
+
+#footer p
+{
+    color: white;
+    font-size: 20px;
+}
+
+#footer a
+{
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+#footer a:hover
+{
+    text-shadow: 0.5px 0.5px 0px white;
+}
+
+.bx-wrapper, bx viewport
+{
+    height: 270px !important;
+}
+
+#quien-soy a
+{
+    text-decoration: underline;
+    color: aqua;
+}

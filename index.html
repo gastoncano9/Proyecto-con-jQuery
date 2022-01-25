@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Proyecto completo - jQuery</title>
+        <!--Estilos css-->
+        <link id = "tema" rel="stylesheet" type="text/css" href="css/estilos.css">
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!--Slider-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!--Moments-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.min.js"></script>
+        <!--Mis Scripts-->
+        <script type = "text/javascript" src="js/app.js"></script>
+    </head>
+
+    <body>
+        <div id = "temas">
+            <div id = "verde"></div>
+            <div id = "rojo"></div>
+            <div id = "celeste"></div>
+        </div>
+
+        <div id="contenido">
+            <header>
+                <div id="logo">
+                    <h1>PROYECTO JS</h1>
+                </div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="reloj.html">RELOJ</a></li>
+                        <li><a href="sobre-mi.html">SOBRE MI</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="galeria">
+                <div id="slider" class = "slider">
+                    <div id = "cielo">
+                        <img src="img/cielo.jpg" title = "Cielo">
+                    </div>
+
+                    <div id = "hojas">
+                        <img src="img/hojas.jpg" title = "Hojas">
+                    </div>
+
+                    <div id = "rojo">
+                        <img src="img/rojo.jpg" title = "Ocaso">
+                    </div>
+                </div>
+            </section>
+
+            <main id="principal">
+                <div id = "articulos">
+                    
+                    
+                </div>
+
+                <aside id="barra">
+                    <h3>¿Quien soy?</h3>
+
+                    <div id = "quien-soy">
+                        <img src="img/caracol.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac
+                        ullamcorper justo</p>
+                    </div>
+
+                    <div id = "identificate">
+                        <h3>Identificate</h3>
+
+                        <form id = "formulario">
+                            <label for = "nombre">Nombre</label>
+                            <input id = "nombre" type = "text">
+
+                            <label for = "correo">Correo</label>
+                            <input id = "correo" type = "email">
+
+                            <label for = "contra">Contraseña</label>
+                            <input id = "contra" type = "password">
+
+                            <input type="submit" value = "Entrar">
+                        </form>
+                    </div>
+                </aside>
+            </main>
+        </div>
+
+        <footer id = "footer">
+            <p>Pagina web Hecha por Gastón Cano ©</p>
+            <a href = "#" class = "subir">Ir arriba</a>
+        </footer>
+    </body>
+</html>

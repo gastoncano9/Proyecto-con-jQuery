@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Proyecto completo - jQuery</title>
+        <!--Estilos css-->
+        <link id = "tema" rel="stylesheet" type="text/css" href="css/estilos.css">
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="js/jquery-ui-1.13.0/jquery-ui.min.css">
+        <link rel="stylesheet" href="js/jquery-ui-1.13.0/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="js/jquery-ui-1.13.0/jquery-ui.theme.min.css">
+        <script type="text/javascript" src="js/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+        <!--Validacion formulario-->
+        <!--<script type = "text/javascript" src = "js/jquery.form-validator.min.js"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+        <!--Mis Scripts-->
+        <script type = "text/javascript" src="js/app.js"></script>
+    </head>
+
+    <body>
+
+        <div id = "temas">
+            <div id = "verde"></div>
+            <div id = "rojo"></div>
+            <div id = "celeste"></div>
+        </div>
+
+        <div id="contenido">
+            <header>
+                <div id="logo">
+                    <h1>PROYECTO JS</h1>
+                </div>
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="reloj.html">RELOJ</a></li>
+                        <li><a href="sobre-mi.html">SOBRE MI</a></li>
+                        <li><a href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main id="principal">
+                <div id = "articulos">
+                    <h2>Contacto</h2>
+                    <form id = "formulario-contacto" method = "post">
+                        <label for = "nombre-contacto">Nombre</label>
+                        <input id = "nombre-contacto" type = "text" data-validation = "alphanumeric">
+
+                        <label for = "Apellidos">Apellidos</label>
+                        <input id = "Apellidos" type = "text" data-validation = "alphanumeric">
+
+                        <label for = "email-contacto">Email</label>
+                        <input id = "email-contacto" type = "email" data-validation = "email">
+
+                        <label for = "sexo">Sexo</label>
+                        <select id = "sexo" data-validation = "required">
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                        </select>
+
+                        <label for = "calendario">Fecha de nacimiento</label>
+                        <input id = "calendario" type = "text" data-validation = "date" data-validation-format = "dd/mm/yyyy">
+
+                        <label for = "edad">Edad</label>
+                        <input id = "edad" type = "number" data-validation = "number">
+
+                        <input type="submit" value = "Enviar">
+                    </form>
+                </div>
+
+                <aside id="barra">
+                    <h3>¿Quien soy?</h3>
+
+                    <div id = "quien-soy">
+                        <img src="img/caracol.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet malesuada erat, ac
+                        ullamcorper justo</p>
+                    </div>
+
+                    <div id = "identificate">
+                        <h3>Identificate</h3>
+
+                        <form id = "formulario">
+                            <label for = "nombre">Nombre</label>
+                            <input id = "nombre" type = "text">
+
+                            <label for = "correo">Correo</label>
+                            <input id = "correo" type = "email">
+
+                            <label for = "contra">Contraseña</label>
+                            <input id = "contra" type = "password">
+
+                            <input type="submit" value = "Entrar">
+                        </form>
+                    </div>
+                </aside>
+            </main>
+        </div>
+
+        <footer id = "footer">
+            <p>Pagina web Hecha por Gastón Cano ©</p>
+            <a href = "#" class = "subir">Ir arriba</a>
+        </footer>
+    </body>
+</html>
